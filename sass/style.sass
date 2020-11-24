@@ -17,102 +17,102 @@ label
   border-radius: 50%
   background-color: #ffcd33
   position: absolute
-   &_small
-      top: -50px
-      left: -45px
-      width: 168px
-      height: 168px
-      z-index: 0
-   &_big
-      top: -80px
-      right: -135px
-      width: 850px
-      height: 850px
-      z-index: 0
-   &_services
-      top: 233px
-      left: -35px
-      z-index: 0
-      width: 521px
-      height: 521px
-   &_counter
-      top: -120px
-      right: -190px
-      width: 315px
-      height: 315px
-      z-index: -1
+  &_small
+    top: -50px
+    left: -45px
+    width: 168px
+    height: 168px
+    z-index: 0
+  &_big
+    top: -80px
+    right: -135px
+    width: 850px
+    height: 850px
+    z-index: 0
+  &_services
+    top: 233px
+    left: -35px
+    z-index: 0
+    width: 521px
+    height: 521px
+  &_counter
+    top: -120px
+    right: -190px
+    width: 315px
+    height: 315px
+    z-index: -1
 .header
   position: relative
   display: grid
-  grid-template-columns: 1.5fr 4fr 2fr
-  grid-template-areas: "header-logo nav-bar header-contacts" ". header-text ."
-  grid-template-rows: 2fr 10fr
-  grid-column-gap: 24px
-  min-height: 830px
-  align-items: center
-  background-color: #fff9e6
-   &-img
-      position: absolute
-      bottom: 0
-      right: 8%
-      width: 490px
-   &-logo
-      grid-area: header-logo
-      justify-self: center
-      position: relative
-      margin-top: -10px
-      margin-left: -35px
-   &-contacts
-      grid-area: header-contacts
-      position: relative
-      margin-top: -40px
-      margin-left: 10px
-      &__link
-         text-decoration: none
-         color: #000
-         margin-right: 20px
-         text-transform: uppercase
-      &__phone
-         font-size: 16px
-         font-weight: 900
-         margin-left: 100px
-      &__callback
-         font-size: 12px
-         display: inline-block
-         font-weight: 700
-         margin-right: -35px
-         margin-left: -5px
-         &:after
-            content: ''
-            display: block
-            width: 100%
-            height: 1px
-            background-color: rgba(0, 0, 0, 0.7)
-   &-text
-      position: relative
-      grid-area: header-text
-      align-self: start
-      margin-top: 45px
-      margin-left: -10px
-   .header-title
-      font-size: 50px
-      font-weight: 700
-      letter-spacing: 1.4px
-      position: relative
-      padding-bottom: 15px
-   .header-subtitle
-      letter-spacing: 0.7px
-      line-height: 1.8
-   .header-buttons
-      margin-top: 65px
-   .header-buttons__link
-      margin-left: 30px
-      &::after
-         content: ''
-         display: block
-         width: 100%
-         height: 1px
-         background-color: rgba(255, 89, 31, 0.7)
+  grid-template-columns: 1.5fr 4fr 2fr 
+  grid-template-areas: "header-logo nav-bar header-contacts"". header-text ."
+  grid-template-rows: 2fr 10fr 
+  grid-column-gap: 24px 
+  min-height: 830px 
+  align-items: center 
+  background-color: #fff9e6 
+  &-img 
+    position: absolute 
+    bottom: 0 
+    right: 8% 
+    width: 490px 
+  &-logo 
+    grid-area: header-logo 
+    justify-self: center 
+    position: relative 
+    margin-top: -35px 
+    margin-left: -35px
+  &-contacts 
+    grid-area: header-contacts 
+    position: relative 
+    margin-top: -40px 
+    margin-left: 10px 
+    &__link 
+      text-decoration: none 
+      color: #000 
+      margin-right: 20px 
+      text-transform: uppercase 
+    &__phone 
+      font-size: 16px 
+      font-weight: 900 
+      margin-left: 100px 
+    &__callback 
+      font-size: 12px 
+      display: inline-block 
+      font-weight: 700 
+      margin-right: -35px 
+      margin-left: -5px 
+      &:after 
+        content: ''
+        display: block 
+        width: 100% 
+        height: 1px 
+        background-color: rgba(0, 0, 0, 0.7) 
+  &-text 
+    position: relative 
+    grid-area: header-text 
+    align-self: start 
+    margin-top: 45px 
+    margin-left: -10px 
+  &-title 
+    font-size: 50px 
+    font-weight: 700 
+    letter-spacing: 1.4px 
+    position: relative 
+    padding-bottom: 15px 
+  &-subtitle 
+    letter-spacing: 0.7px 
+    line-height: 1.8 
+  &-buttons 
+    margin-top: 65px 
+    &__link 
+      margin-left: 30px 
+      &::after 
+        content: ''
+        display: block 
+        width: 100% 
+        height: 1px 
+        background-color: rgba(255, 89, 31, 0.7)
 .nav-bar
   position: fixed
   grid-area: nav-bar
@@ -132,8 +132,8 @@ label
   text-align: center
   transition: 0.2s
   transform: translateY(-100%)
-   &_active
-      transform: translateY(0)
+  &_active
+    transform: translateY(0)
 .nav-link
   text-decoration: none
   font-size: 17px
@@ -168,229 +168,240 @@ label
   margin-top: 79px
   margin-bottom: 69px
   margin-left: 5px
-.arrow
-  background-color: transparent
-  border: none
+.arrow 
+  background-color: transparent 
+  border: none 
   opacity: 0.5
-   &__right
-      margin-left: 30px
-.thumbs
-  display: flex
-  justify-content: space-between
-  max-width: 395px
-  font-size: 11.5px
+  &__right 
+    margin-left: 30px 
+.thumbs 
+  display: flex 
+  justify-content: space-between 
+  max-width: 395px 
+  font-size: 11.5px 
   text-decoration: none
-.wrap
+.wrap 
   max-width: 950px
   margin: 100px auto 0 auto
 .about
   color: #000
-   &-title
-      font-size: 45px
-      letter-spacing: 1.15px
-      margin-left: 30px
-      margin-bottom: 40px
-   &-text
-      letter-spacing: 0.515px
-      line-height: 1.7
-      margin-left: 30px
-   &-row
-      display: flex
-      flex-direction: row
-      justify-content: space-between
-      text-align: center
-   &-col
-      display: flex
-      flex-direction: column
-      align-items: flex-end
-      margin-top: 60px
-   &__col
+  &-title 
+    font-size: 45px 
+    letter-spacing: 1.15px 
+    margin-left: 30px 
+    margin-bottom: 40px 
+  &-text 
+    letter-spacing: 0.515px 
+    line-height: 1.7 
+    margin-left: 30px 
+  &-row 
+    display: flex 
+    flex-direction: row 
+    justify-content: space-between 
+    text-align: center 
+  &-col 
+    display: flex 
+    flex-direction: column 
+    align-items: flex-end 
+    margin-top: 60px 
+  &__col 
+    margin-right: 30px 
+  &__img 
+    display: inline-block 
+    position: relative 
+  &__title 
+    position: absolute 
+    color: rgb(255, 89, 31) 
+    font-size: 80px 
+    padding-top: 60px 
+    margin-left: 10px 
+  &__text 
+    padding-top: 37px 
+    letter-spacing: 1px 
+.services 
+  margin-top: 100px 
+  position: relative 
+  &-title 
+    font-size: 47px 
+    margin-left: 30px 
+    margin-bottom: 50px 
+  &-links 
+    display: flex 
+    justify-content: space-between 
+    text-transform: uppercase 
+    font-size: 15px 
+    font-weight: 700 
+    width: 620px
+    margin-left: 30px
+  &-text 
+    display: flex 
+  &-img 
+    display: inline-block 
+    position: relative 
+    bottom: -40px 
+    left: -220px 
+  &-block 
+    margin-top: 90px 
+    margin-left: -65px 
+  &__title 
+    font-size: 40px 
+    letter-spacing: 1px 
+    margin-bottom: 5px 
+  &-list 
+    list-style-type: none 
+    line-height: 2.5 
+    font-size: 16px 
+    margin-top: 35px 
+    margin-left: -40px 
+    letter-spacing: 0.45px 
+    &__item>i 
+      color: #ffcd33 
+      padding-right: 10px 
+      width: 40px 
+  &-buttons 
+    margin-top: 40px 
+    &__link 
+      margin-left: 30px 
+      &:after 
+        content: ''
+        display: block 
+        width: 100% 
+        height: 1px 
+        background-color: rgba(255, 89, 31, 0.7) 
+  &-button 
+    padding: 24px 30px 
+  &-arrows 
+    margin-top: 75px
+    &__left
       margin-right: 30px
-   &__img
-      display: inline-block
-      position: relative
-   &__title
-      position: absolute
-      color: #ff591f
-      font-size: 80px
-      padding-top: 60px
-      margin-left: 10px
-   &__text
-      padding-top: 37px
-      letter-spacing: 1px
-.services
-  margin-top: 100px
+.counter 
   position: relative
-   &-title
-      font-size: 47px
-      margin-left: 30px
-      margin-bottom: 50px
-   &-links
-      display: flex
-      justify-content: space-between
-      text-transform: uppercase
-      font-size: 15px
-      font-weight: 700
-      width: 620px
-      margin-left: 30px
-   &-text
-      display: -webkit-box
-      display: -webkit-flex
-      display: -ms-flexbox
-      display: flex
-   &-img
-      display: inline-block
-      position: relative
-      bottom: -40px
-      left: -220px
-   &-block
-      margin-top: 90px
-      margin-left: -65px
-   &__title
-      font-size: 40px
-      letter-spacing: 1px
-      margin-bottom: 5px
-   &-list
-      list-style-type: none
-      line-height: 2.5
-      font-size: 16px
-      margin-top: 35px
-      margin-left: -40px
-      letter-spacing: 0.45px
-      &__item > i
-         color: #ffcd33
-         padding-right: 10px
-         width: 40px
-   &-buttons
-      margin-top: 40px
-      &__link
-         margin-left: 30px
-         &:after
-            content: ''
-            display: block
-            width: 100%
-            height: 1px
-            background-color: rgba(255, 89, 31, 0.7)
-   &-button
-      padding: 24px 30px
-   &-arrows
-      margin-top: 75px
-      &__left
-         margin-right: 30px
-.counter
-  position: relative
-  width: 925px
-  height: 780px
-  margin-left: 30px
-  background-color: #fff
-  margin-top: 85px
-  border-radius: 20px
-  box-shadow: 0 10px 10px rgba(229, 231, 233, 0.7), 0 9px 16px rgba(229, 231, 233, 0.7)
-   &-title
-      font-size: 40px
-      margin-top: 53px
-      margin-left: 50px
-      margin-bottom: 50px
-      font-weight: bold
-      letter-spacing: 0.8px
-   &-block
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-between
-      align-items: center
-      height: 290px
-      margin-top: -40px
-   &-policy
-      font-size: 10.6px
-      margin-top: 20px
-      margin-left: 53px
-      letter-spacing: 0.4px
-      &__link
-         border-bottom: 1px dotted
-   &-cost
-      display: flex
-      justify-content: space-between
-      margin: auto
-      width: 830px
-      height: 155px
-      border: 2.5px solid #e1e4e9
-      margin-left: 50px
-      &__prelim
-         font-size: 13px
-         margin: 15px 0 0 40px
-      &__total
-         font-size: 48px
-         margin: 0
-         font-weight: 600
-         letter-spacing: 1px
-         margin-left: -10px
-      &__list
-         width: 355px
-         list-style-type: none
-         font-size: 13px
-         margin-top: 30px
-         margin-right: 35px
-         padding: 0
-      &__form
-         margin-top: 35px
-         margin-left: 50px
-.select, .main
-  width: 400px
-.select
+  width: 925px 
+  height: 780px 
+  margin-left: 30px 
+  background-color: #fff 
+  margin-top: 85px 
+  border-radius: 20px 
+  box-shadow: 0 10px 10px rgba(229, 231, 233, 0.7), 0 9px 16px rgba(229, 231, 233, 0.7) 
+  &-title 
+    font-size: 40px 
+    margin-top: 53px 
+    margin-left: 50px
+    margin-bottom: 50px
+    font-weight: bold 
+    letter-spacing: 0.8px 
+  &-block 
+    display: flex 
+    flex-wrap: wrap 
+    justify-content: space-between 
+    align-items: center 
+    height: 290px 
+    margin-top: -40px 
+  &-policy 
+    font-size: 10.6px 
+    margin-top: 20px 
+    margin-left: 53px 
+    letter-spacing: 0.4px 
+    &__link 
+      border-bottom: 1px dotted 
+  &-cost 
+    display: flex 
+    justify-content: space-between 
+    margin: auto 
+    width: 830px 
+    height: 155px 
+    border: 2.5px solid #e1e4e9
+    margin-left: 50px 
+    &__prelim 
+      font-size: 13px 
+      margin:: 15px 0 0 40px 
+    &__total 
+      font-size: 48px 
+      margin: 0 
+      font-weight: 600 
+      letter-spacing: 1px 
+      margin-left: -10px 
+    &__list 
+      width: 355px 
+      list-style-type: none 
+      font-size: 13px 
+      margin-top: 30px 
+      margin-right: 35px 
+      padding: 0 
+    &__form 
+      margin-top: 35px 
+      margin-left: 50px 
+.select,
+.main 
+  width: 400px 
+.select 
   margin: auto
-  margin-left: 50px
-  color: #424949
-   &-title
-      font-size: 0.9rem
-      color: #737373
-.form-control
-  display: inline-block
-  width: 380px
-  height: 50px
-  font-size: 15px
-  background-color: #f2f2f2
-  background-clip: padding-box
-  padding: 0 0 0.3rem 1.45rem
-  border: none
-  border-radius: 0.3rem
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
-   &__cost
-      width: 270px
-      height: 55px
-      padding-left: 20px
-      border-radius: 0.3rem
-.main
-  display: flex
-  flex-direction: column
+  margin-left: 50px 
+  color: #424949 
+  &-title 
+    font-size: 0.9rem 
+    color: #737373 
+.form-control 
+  display: inline-block 
+  width: 380px 
+  height: 50px 
+  font-size: 15px 
+  background-color: #f2f2f2 
+  background-clip: padding-box 
+  padding: 0 0 0.3rem 1.45rem 
+  border: none 
+  border-radius: 0.3rem 
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out 
+  &__cost 
+    width: 270px 
+    height: 55px 
+    padding-left: 20px 
+    border-radius: 0.3rem 
+.main 
+  display: flex 
+  flex-direction: column 
   position: relative
-   &-first
-      height: 80px
-      margin-right: 40px
-   &-third
-      margin-right: 40p
-   &-second
-      margin-left: 50px
-      margin-bottom: 35px
-      margin-top: -20px
-   &-third
-      margin-top: -20px
-      margin-bottom: 35px
-.cost-item
-  display: flex
-  align-items: baseline
-  margin-bottom: 15px
-  &:before
+  &-first
+    height: 80px
+  &-first,
+  &-third 
+    margin-right: 40px 
+  &-second 
+    margin-left: 50px 
+    margin-bottom: 35px
+  &-second,
+  &-third
+    margin-top: -20px
+  &-third 
+    margin-bottom: 35px
+.cost-item 
+  display: flex 
+  align-items: baseline 
+  margin-bottom: 15px 
+  &::before 
     content: ''
-    border-bottom: 1px dashed #000
-    flex-grow: 1
-    margin: 0 5px
-    order: 2
-.line
-  order: 3
-.email, .counter-button
-  margin-left: 30px
-.thumbs__link:hover, .services__link:hover, .header-contacts__callback:hover, .header-nav__link:hover, .counter-policy__link:hover
-  color: #a5a6a7
+    border-bottom: 1px dashed #000 
+    flex-grow: 1 
+    margin: 0 5px 
+    order: 2 
+.line 
+  order: 3 
+.email,
+.counter-button 
+  margin-left: 30px 
+.thumbs__link:hover,
+.services__link:hover,
+.header-contacts__callback:hover,
+.header-nav__link:hover,
+.counter-policy__link:hover 
+  color: rgb(165, 166, 167)
+.video
+   max-width: 560px
+   width: 100%
+   &-block
+         display: flex
+         justify-content: center
+         margin-top: 50px
 
 @media (max-width: 1360px)
    .header-img
