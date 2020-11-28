@@ -95,7 +95,7 @@ label {
   -ms-grid-column-align: center;
       justify-self: center;
   position: relative;
-  margin-top: -35px;
+  margin-top: -20px;
   margin-left: -35px;
 }
 
@@ -692,6 +692,7 @@ label {
   max-width: 560px;
   width: 100%;
 }
+
 .video-block {
   display: -webkit-box;
   display: -webkit-flex;
