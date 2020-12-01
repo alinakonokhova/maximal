@@ -30,10 +30,9 @@
    <header id="header" class="header">
       <div class="circle circle_small"></div>
       <div class="circle circle_big"></div>
-      <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/header-img.png" alt="" id="header-img"
-         class="header-img">
+      <img src="img/header-img.png" alt="" id="header-img" class="header-img">
       <a href="#" class="header-logo">
-         <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/logo.png" alt="">
+         <img src="img/logo.png" alt="">
       </a>
       <nav id="nav-bar" class="nav-bar">
          <div class="menu menu_active">
@@ -42,6 +41,9 @@
                   <a href="#about" class="nav-link">О нас</a>
                   <a href="#services" class="nav-link">Услуги</a>
                   <a href="#portfolio" class="nav-link">Наши работы</a>
+                  <a href="#amodels" class="nav-link">Наши модели</a>
+                  <a href="#vacancies" class="nav-link">Вакансии</a>
+                  <a href="#contacts" class="nav-link">Контакты</a>
                </nav>
             </div>
          </div>
@@ -58,10 +60,8 @@
             <a href="#" class="link header-buttons__link">Узнать больше</a>
          </div>
          <div class="arrows">
-            <a href="#" class="arrow arrow__left"><img
-                  src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/arrow-left.png" alt=""></a>
-            <a href="#" class="arrow arrow__right"><img
-                  src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/arrow-right.png" alt=""></a>
+            <a href="#" class="arrow arrow__left"><img src="img/arrow-left.png" alt=""></a>
+            <a href="#" class="arrow arrow__right"><img src="img/arrow-right.png" alt=""></a>
          </div>
          <div class="thumbs">
             <a href="#" class="thumbs__link">Промоутеры</a>
@@ -72,7 +72,7 @@
          </div>
       </div>
    </header>
-   <div class="wrap">
+   <div class="container">
       <section id="about" class="about">
          <h2 class="about-title">Кто мы такие?</h2>
          <p class="about-text">С 2006 года MAXIMALLLS активно занимается организацией бизнес-мероприятий по системе
@@ -80,26 +80,22 @@
             самых сложных с <br>точки зрения организации проектов.</p>
          <div class="about-row">
             <div class="about-col">
-               <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/about/1.png" alt=""
-                  class="about__img">
+               <img src="img/about/1.png" alt="" class="about__img">
                <h3 class="about__title">10</h3>
                <span class="about__text">лет работы</span>
             </div>
             <div class="about-col">
-               <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/about/2.png" alt=""
-                  class="about__img">
+               <img src="img/about/2.png" alt="" class="about__img">
                <h3 class="about__title">34</h3>
                <span class="about__text">городов <br>присутствия</span>
             </div>
             <div class="about-col about__col">
-               <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/about/3.png" alt=""
-                  class="about__img">
+               <img src="img/about/3.png" alt="" class="about__img">
                <h3 class="about__title">1011</h3>
                <span class="about__text">проведено <br>мероприятий</span>
             </div>
             <div class="about-col about__col">
-               <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/about/4.png" alt=""
-                  class="about__img">
+               <img src="img/about/4.png" alt="" class="about__img">
                <h3 class="about__title">543</h3>
                <span class="about__text">позитивных <br>промоутеров</span>
             </div>
@@ -117,8 +113,7 @@
          <div class="services-text">
             <div class="services-imgs">
                <div class="circle circle_services"></div>
-               <img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/services/services-img.png"
-                  alt="" class="services-img">
+               <img src="img/services/services-img.png" alt="" class="services-img">
             </div>
             <div class="services-block">
                <h3 class="services__title">Наши промоутеры:</h3>
@@ -132,15 +127,16 @@
                   <a href="#" class="link services-buttons__link">Узнать больше</a>
                </div>
                <div class="services-arrows">
-                  <a class="arrow services-arrows__left"><img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/arrow-left.png" alt=""></a>
-                  <a class="arrow services-arrows__right"><img src="https://raw.githubusercontent.com/alinakonokhova/maximal.ru/main/img/arrow-right.png" alt=""></a>
+                  <a class="arrow services-arrows__left"><img src="img/arrow-left.png" alt=""></a>
+                  <a class="arrow services-arrows__right"><img src="img/arrow-right.png" alt=""></a>
                </div>
             </div>
          </div>
       </section>
+
       <section class="counter">
          <div class="circle circle_counter"></div>
-         <h3 class="counter-title">Узнайте стоимость Вашей акции <br>за 2 минуты!</h3>
+         <h2 class="counter-title">Узнайте стоимость Вашей акции <br>за 2 минуты!</h2>
          <div class="counter-block">
             <div class="select">
                <p class="select-title">Кого вы ищете</p>
@@ -176,7 +172,7 @@
                <li class="cost-item">НДС 18%<span class="line">2 352 руб.</span></li>
             </ul>
          </div>
-         <form id="form" class="counter-cost__form" action="https://www.freecodecamp.com/email-submit">
+         <form id="form" class="counter-cost__form">
             <input type="text" name="name" class="form-control form-control__cost" placeholder="Ваше имя" required />
             <input type="email" name="email" id="email" class="form-control form-control__cost email"
                placeholder="Ваш email" required>
@@ -185,10 +181,83 @@
          <p class="counter-policy">Нажимая на кнопку &#171;заказать персонал&#187;, вы соглашаетесь с <a href="#"
                class="counter-policy__link">политикой конфиденциальности</a>.</p>
       </section>
-      <section id="portfolio" class="video-block">
-         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/L756i9tqDRw" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+      <section id="portfolio" class="portfolio">
+         <div class="portfolio-header">
+            <h2 class="title">Наши работы</h2>
+            <div class="arrows portfolio-arrows">
+               <a href="#" class="arrow arrow__left"><img src="img/arrow-left.png" alt=""></a>
+               <a href="#" class="arrow arrow__right"><img src="img/arrow-right.png" alt=""></a>
+            </div>
+         </div>
+         <div class="portfolio-row">
+            <div class="portfolio-col portfolio-col__first">
+               <img src="img/portfolio/1.png" alt="" class="portfolio-image">
+               <h3 class="portfolio-col__title">Промоакция магазина Пятёрочка</h3>
+               <p class="portfolio-col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deserunt
+                  sed dolorem temporibus libero laboriosam ut expedita.</p>
+               <div class="portfolio-buttons">
+                  <button class="button">заказать персонал</button>
+                  <a href="#" class="link portfolio-buttons__link">Узнать больше</a>
+               </div>
+            </div>
+            <div class="portfolio-col portfolio-col__second">
+               <img src="img/portfolio/2.png" alt="" class="portfolio-image">
+               <h3 class="portfolio-col__title">Промоакция магазина Пятёрочка</h3>
+               <p class="portfolio-col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+                  deserunt sed dolorem temporibus libero laboriosam ut expedita.</p>
+               <div class="portfolio-buttons">
+                  <button class="button">заказать персонал</button>
+                  <a href="#" class="link portfolio-buttons__link">Узнать больше</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="benefits">
+         <div src="" alt="" class="circle circle_benefits"></div>
+         <img src="img/benefits/benefits-image.png" alt="" class="benefits-img">
+         <h2 class="title benefits-title">Преимущества BTL акций</h2>
+         <span class="benefits-text">Как меняется объём продаж на примере наших клиентов.</span>
+         <div class="benefits-action">
+            <h4 class="top">Пик объёма реализации компании</h4>
+            <span class="date">Дата проведения акции <time>09.07.2020</time> -<time> 22.07.2020</time></span>
+            <img src="img/benefits/action-result.jpg" alt="" class="benefits-action__img">
+         </div>
+      </section>
+
+      <section id="models" class="models">
+         <div class="portfolio-header">
+            <h2 class="title">Наши модели</h2>
+            <div class="arrows portfolio-arrows">
+               <a href="#" class="arrow arrow__left"><img src="img/arrow-left.png" alt=""></a>
+               <a href="#" class="arrow arrow__right"><img src="img/arrow-right.png" alt=""></a>
+            </div>
+         </div>
+         <div class="models-block">
+            <div class="model">
+               <a href="" class="model__link">
+                  <img src="img/models/1.png" alt="" class="model-img">
+               </a>
+               <span class="model-description">Иванова Евгения</span>
+            </div>
+            <div class="model">
+               <a href="" class="model__link">
+                  <img src="img/models/1.png" alt="" class="model-img">
+               </a>
+               <span class="model-description">Иванова Евгения</span>
+            </div>
+            <div class="model">
+               <a href="" class="model__link">
+                  <img src="img/models/1.png" alt="" class="model-img">
+               </a>
+               <span class="model-description">Иванова Евгения</span>
+            </div>
+            <div class="model">
+               <img src="img/models/4.png" alt="" class="model-img">
+               <span class="model-description">Иванова Евгения</span>
+            </div>
+         </div>
       </section>
    </div>
    <script>
