@@ -10,14 +10,6 @@
    <meta name="apple-mobile-web-app-title" content="maximal.ru">
    <meta name="author" content="Alina Konokhova">
    <meta name="description" content="Организация бизнес-мероприятий, подбор персонала - MAXIMAL">
-   <meta property="og:url" content="https://maximal.ru">
-   <meta property="og:type" content="website">
-   <meta property="og:title" content="Организация мероприятий любой сложности">
-   <meta property="og:description" content="Организация бизнес-мероприятий, подбор персонала - MAXIMAL">
-   <meta property="og:site_name" content="МАКСИМАЛ.ру">
-   <meta property="og:locale" content="ru_RU">
-   <meta property="og:image" content="img/website-screen.jpg">
-   <meta property="og:image:alt" content="Организация бизнес-мероприятий, подбор персонала - MAXIMAL">
    <link rel="icon" type="image/x-icon" href="img/favicon.png">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/ion-range-slider.css">
@@ -27,6 +19,7 @@
 </head>
 
 <body>
+   <!-- Header -->
    <header id="header" class="header">
       <div class="circle circle_small"></div>
       <div class="circle circle_big"></div>
@@ -35,18 +28,12 @@
          <img src="img/logo.png" alt="">
       </a>
       <nav id="nav-bar" class="nav-bar">
-         <div class="menu menu_active">
-            <div class="menu-wrap">
-               <nav class="menu__nav">
-                  <a href="#about" class="nav-link">О нас</a>
-                  <a href="#services" class="nav-link">Услуги</a>
-                  <a href="#portfolio" class="nav-link">Наши работы</a>
-                  <a href="#amodels" class="nav-link">Наши модели</a>
-                  <a href="#vacancies" class="nav-link">Вакансии</a>
-                  <a href="#contacts" class="nav-link">Контакты</a>
-               </nav>
-            </div>
-         </div>
+         <a href="#services" class="nav-link">Услуги</a>
+         <a href="#portfolio" class="nav-link">Наши работы</a>
+         <a href="#amodels" class="nav-link">Наши модели</a>
+         <a href="#about" class="nav-link">О нас</a>
+         <a href="#vacancies" class="nav-link">Вакансии</a>
+         <a href="#contacts" class="nav-link">Контакты</a>
       </nav>
       <div class="header-contacts">
          <a href="#" class="header-contacts__link header-contacts__phone">8 803 123-65-54</a>
@@ -72,7 +59,12 @@
          </div>
       </div>
    </header>
+   <!-- End Header -->
+
+   <!-- Container -->
    <div class="container">
+
+      <!-- About -->
       <section id="about" class="about">
          <h2 class="about-title">Кто мы такие?</h2>
          <p class="about-text">С 2006 года MAXIMALLLS активно занимается организацией бизнес-мероприятий по системе
@@ -82,25 +74,28 @@
             <div class="about-col">
                <img src="img/about/1.png" alt="" class="about__img">
                <h3 class="about__title">10</h3>
-               <span class="about__text">лет работы</span>
+               <span class="about__text text-notes">лет работы</span>
             </div>
             <div class="about-col">
                <img src="img/about/2.png" alt="" class="about__img">
                <h3 class="about__title">34</h3>
-               <span class="about__text">городов <br>присутствия</span>
+               <span class="about__text text-castle">городов <br>присутствия</span>
             </div>
             <div class="about-col about__col">
                <img src="img/about/3.png" alt="" class="about__img">
                <h3 class="about__title">1011</h3>
-               <span class="about__text">проведено <br>мероприятий</span>
+               <span class="about__text text-pens">проведено <br>мероприятий</span>
             </div>
             <div class="about-col about__col">
                <img src="img/about/4.png" alt="" class="about__img">
                <h3 class="about__title">543</h3>
-               <span class="about__text">позитивных <br>промоутеров</span>
+               <span class="about__text text-speaker">позитивных <br>промоутеров</span>
             </div>
          </div>
       </section>
+      <!-- End About -->
+
+      <!-- Services -->
       <section id="services" class="services">
          <h2 class="services-title">Наши услуги:</h2>
          <div class="services-links">
@@ -116,7 +111,7 @@
                <img src="img/services/services-img.png" alt="" class="services-img">
             </div>
             <div class="services-block">
-               <h3 class="services__title">Наши промоутеры:</h3>
+               <h3 class="services__title">Наши <br>промоутеры:</h3>
                <ul class="services-list">
                   <li class="services-list__item"><i class="fa fa-check"></i>Позитивны и улыбчивы</li>
                   <li class="services-list__item"><i class="fa fa-check"></i>Не стоят на месте</li>
@@ -133,13 +128,15 @@
             </div>
          </div>
       </section>
+      <!-- End Services -->
 
+      <!-- Counter -->
       <section class="counter">
          <div class="circle circle_counter"></div>
          <h2 class="counter-title">Узнайте стоимость Вашей акции <br>за 2 минуты!</h2>
          <div class="counter-block">
             <div class="select">
-               <p class="select-title">Кого вы ищете</p>
+               <label class="select-title">Кого вы ищете</label>
                <select name="style" id="dropdown" class="form-control" required>
                   <option selected value="promouters">Промоутеры</option>
                   <option value="models" name="models">Mодели</option>
@@ -174,17 +171,19 @@
          </div>
          <form id="form" class="counter-cost__form">
             <input type="text" name="name" class="form-control form-control__cost" placeholder="Ваше имя" required />
-            <input type="email" name="email" id="email" class="form-control form-control__cost email"
-               placeholder="Ваш email" required>
+            <input type="phone" name="phone" id="phone" class="form-control form-control__cost phone"
+               placeholder="Ваш телефон" required>
             <input id="submit" type="submit" value="заказать персонал" class="button counter-button">
          </form>
          <p class="counter-policy">Нажимая на кнопку &#171;заказать персонал&#187;, вы соглашаетесь с <a href="#"
                class="counter-policy__link">политикой конфиденциальности</a>.</p>
       </section>
+      <!-- End Counter -->
 
+      <!-- Portfolio -->
       <section id="portfolio" class="portfolio">
          <div class="portfolio-header">
-            <h2 class="title">Наши работы</h2>
+            <h2 class="title portfolio-title">Наши работы</h2>
             <div class="arrows portfolio-arrows">
                <a href="#" class="arrow arrow__left"><img src="img/arrow-left.png" alt=""></a>
                <a href="#" class="arrow arrow__right"><img src="img/arrow-right.png" alt=""></a>
@@ -197,7 +196,7 @@
                <p class="portfolio-col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime deserunt
                   sed dolorem temporibus libero laboriosam ut expedita.</p>
                <div class="portfolio-buttons">
-                  <button class="button">заказать персонал</button>
+                  <button class="button portfolio-button">заказать персонал</button>
                   <a href="#" class="link portfolio-buttons__link">Узнать больше</a>
                </div>
             </div>
@@ -207,13 +206,15 @@
                <p class="portfolio-col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
                   deserunt sed dolorem temporibus libero laboriosam ut expedita.</p>
                <div class="portfolio-buttons">
-                  <button class="button">заказать персонал</button>
+                  <button class="button portfolio-button">заказать персонал</button>
                   <a href="#" class="link portfolio-buttons__link">Узнать больше</a>
                </div>
             </div>
          </div>
       </section>
+      <!-- End Portfolio -->
 
+      <!-- Benefits -->
       <section class="benefits">
          <div src="" alt="" class="circle circle_benefits"></div>
          <img src="img/benefits/benefits-image.png" alt="" class="benefits-img">
@@ -225,7 +226,9 @@
             <img src="img/benefits/action-result.jpg" alt="" class="benefits-action__img">
          </div>
       </section>
+      <!-- End Benefits -->
 
+      <!-- Models -->
       <section id="models" class="models">
          <div class="portfolio-header">
             <h2 class="title">Наши модели</h2>
@@ -237,13 +240,13 @@
          <div class="models-block">
             <div class="model">
                <a href="" class="model__link">
-                  <img src="img/models/1.png" alt="" class="model-img">
+                  <img src="img/models/1.jpg" alt="" class="model-img">
                </a>
                <span class="model-description">Иванова Евгения</span>
             </div>
             <div class="model">
                <a href="" class="model__link">
-                  <img src="img/models/2.png" alt="" class="model-img">
+                  <img src="img/models/2.jpg" alt="" class="model-img">
                </a>
                <span class="model-description">Иванова Евгения</span>
             </div>
@@ -254,11 +257,21 @@
                <span class="model-description">Иванова Евгения</span>
             </div>
             <div class="model">
-               <img src="img/models/4.png" alt="" class="model-img">
+               <img src="img/models/4.jpg" alt="" class="model-img">
                <span class="model-description">Иванова Евгения</span>
             </div>
          </div>
       </section>
+      <!-- End Models -->
+
+      <!-- Clients -->
+      <!-- End Clients -->
+
+      <!-- Contacts -->
+      <!-- End Contacts -->
+
+      <!-- Footer -->
+      <!-- End Footer -->
    </div>
    <script>
       $(".slider-first").ionRangeSlider({

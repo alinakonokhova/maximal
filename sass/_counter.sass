@@ -1,0 +1,128 @@
+.circle_counter
+  top: -120px
+  right: -190px
+  width: 315px
+  height: 315px
+  z-index: -1
+.counter 
+  position: relative
+  width: 925px 
+  height: 780px
+  background-color: #fff 
+  margin-top: 85px
+  padding-top: 5px
+  border-radius: 20px 
+  box-shadow: 0 10px 10px rgba(229, 231, 233, 0.7), 0 9px 16px rgba(229, 231, 233, 0.7) 
+  &-title 
+    font-size: 4.4rem 
+    margin-top: 45px 
+    margin-left: 55px
+    margin-bottom: 50px
+    font-weight: bold 
+    letter-spacing: .1rem
+    line-height: 1.05
+  &-block 
+    display: flex 
+    flex-wrap: wrap 
+    justify-content: space-between 
+    align-items: center 
+    height: 290px 
+    margin-top: -40px 
+  &-policy 
+    font-size: 1.2rem
+    margin-top: 17px 
+    margin-left: 53px 
+    letter-spacing: .04rem 
+    &__link 
+      border-bottom: 1px dotted 
+  &-cost 
+    display: flex 
+    justify-content: space-between 
+    margin: auto 
+    width: 830px 
+    height: 155px 
+    border: 3px solid #e1e4e9
+    border-radius: 5px
+    margin-left: 50px 
+    &__prelim
+      font-family: 'Circe Bold'
+      font-size: 1.4rem
+      margin:: 25px 0 0 45px 
+    &__total 
+      font-size: 4.9rem 
+      margin-top: 7px
+      font-weight: 600 
+      letter-spacing: .1rem
+      margin-left: -5px 
+    &__list 
+      width: 355px 
+      list-style-type: none 
+      font-size: 1.3rem 
+      margin-top: 30px
+      margin-right: 35px 
+      padding: 0 
+    &__form 
+      margin-top: 22px 
+      margin-left: 50px 
+.select,
+.main 
+  width: 400px 
+.select
+  margin-top: 7px
+  margin-left: 50px 
+  color: #424949 
+  &-title
+    font-size: 1.6rem
+    color: #737373
+    margin-bottom: 20px
+.form-control 
+  display: inline-block 
+  width: 380px 
+  height: 50px 
+  font-size: 1.5rem 
+  background-color: #f2f2f2 
+  background-clip: padding-box 
+  padding: 30px auto
+  padding-left: 27px
+  border: none 
+  border-radius: 10px
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+  outline: none
+  margin-top: 15px
+  &__cost 
+    width: 270px 
+    height: 55px
+    border-radius: 10px
+.main 
+  display: flex 
+  flex-direction: column 
+  position: relative
+  &-first
+    height: 80px
+  &-first,
+  &-third 
+    margin-right: 40px 
+  &-second 
+    margin-left: 50px 
+    margin-bottom: 35px
+  &-second,
+  &-third
+    margin-top: -20px
+  &-third 
+    margin-bottom: 35px
+.cost-item 
+  display: flex 
+  align-items: baseline 
+  margin-bottom: 10px 
+  &::before 
+    content: ''
+    border-bottom: 1px dashed #000 
+    flex-grow: 1 
+    margin: 0 5px 
+    order: 2 
+.line 
+  order: 3 
+.phone
+  margin-left: 30px
+.counter-button 
+  margin-left: 40px
